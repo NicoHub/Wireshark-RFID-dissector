@@ -54,11 +54,12 @@ example: `wireshark -r rfid_capture.pcap -X lua_script:fileshark_pcap.lua`
 
 ####How to configure wireshark to take it into account:
 To let Wireshark know 14443-A as new dissector,  you have to follow these steps:
-1. click on Edit 
-2. click on Preferences
-3. choose Protocols on the tree on the left
-4.  choose the DTL_USER protocol
-5.  click on Edit...
-6.  click on New and configure it as follow:
+
+1.  click on __Edit__
+2.  click on __Preferences__
+3.  choose __Protocols__ on the tree on the left
+4.  choose the __DTL_USER__ protocol
+5.  click on __Edit...__
+6.  click on __New__ and configure it as follow:
 
 ![User DLTs Table](https://cloud.githubusercontent.com/assets/12861508/8907707/0eb0e11c-3478-11e5-9859-3a51fc630441.PNG)
