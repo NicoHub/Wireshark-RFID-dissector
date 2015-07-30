@@ -44,12 +44,12 @@ Then, the dissector file should appear on the plugins list:
 Edit the file __Wireshark\init.lua__ 
 *  Verify this line: 
 	`disable_lua = false`
-*  And add this line at the end of the file (`DATA_DIR` is the dir where the dissector actually is)
+*  And add this line at the end of the file (`DATA_DIR` is the dir where the dissector actually is):
 	`dofile(DATA_DIR.."rfid.lua")`
 
 
 #####Method 3:  loading the dissector directly from the command line
-use the argument `-X lua_script:rfid.lua`
+use the argument `-X lua_script:rfid.lua`  
 example: `wireshark -r rfid_capture.pcap -X lua_script:fileshark_pcap.lua`
 
 ####How to configure wireshark to take it into account:
