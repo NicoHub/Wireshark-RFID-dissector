@@ -26,15 +26,6 @@ Wireshark has an embedded Lua interpreter since version  0.99.4. In some older v
   * __About Wireshark__  
   * __Folders__ tab
 
-For example:
-On Windows: 
-Personal Plugins: C:\Users\username\AppData\Roaming\Wireshark\plugins
-Global Plugins: C:\Program Files\ Wireshark\plugins\1.12.5
-
-On Linux/UNIX 
-Personal Plugins: ~/.wireshark/
-Global Plugins: ~/.wireshark/plugins/
-
 Then, the dissector file should appear on the plugins list: 
 * __help__ menu
 * __About Wireshark__ 
@@ -42,7 +33,7 @@ Then, the dissector file should appear on the plugins list:
 
 #####Method 2:  add the Lua file to any folder
 Edit the file __Wireshark\init.lua__ 
-*  Verify this line: 
+*  Verify this line:  
 	`disable_lua = false`
 *  And add this line at the end of the file (`DATA_DIR` is the dir where the dissector actually is):
 	`dofile(DATA_DIR.."rfid.lua")`
