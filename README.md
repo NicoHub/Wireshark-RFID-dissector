@@ -40,8 +40,8 @@ Edit the file __Wireshark\init.lua__
 
 
 #####Method 3:  loading the dissector directly from the command line
-use the argument `-X lua_script:rfid.lua`  
-example: `wireshark -r rfid_capture.pcap -X lua_script:fileshark_pcap.lua`
+Use the argument `-X lua_script:rfid.lua`  
+Example: `wireshark -r rfid_capture.pcap -X lua_script:fileshark_pcap.lua`
 
 ####How to configure wireshark to take it into account:
 To let Wireshark know 14443-A as new dissector,  you have to follow these steps:
